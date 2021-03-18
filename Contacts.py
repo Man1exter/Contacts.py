@@ -3,14 +3,15 @@ plik = open("kontakty.txt", "a")
 
 if plik.writable():
 
-    plik.write(input("Imie: ") + "\n")
-    plik.write(input("Nazwisko: ") + "\n")
-    plik.write(input("Narodowość: ") + "\n")
+    plik.write(input("Imie:  " + "\n"))
+    plik.write(input("Nazwisko:  " + "\n"))
+    plik.write(input("Narodowość:  " + "\n"))
 
-    telefon = input("Telefon: ")
+    telefon = input("Telefon: ") #zmienna...
+
     if telefon != int:
         print("Wprowadziles zle dane, popraw je")
-        telefon = input("Telefon: ")
+        telefon = input("Telefon:  ")
         plik.write(telefon)
     else:
         plik.write(telefon)
