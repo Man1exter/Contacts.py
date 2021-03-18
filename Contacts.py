@@ -1,7 +1,10 @@
 
-plik = open("kontakty.txt", "a")
+wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- " + "\n"))
 
-if plik.writable():
+if wybor == 1:
+ plik = open("kontakty.txt", "a")
+
+ if plik.writable():
 
     plik.write(input("Imie:  " + "\n"))
     plik.write(input("Nazwisko:  " + "\n"))
@@ -18,13 +21,14 @@ if plik.writable():
 
     plik.write(input("( ENTER --> ZATWIERDZ )") + "\n")
 
-plik.close()
+    plik.close()
 
+else:
 
-plik = open("kontakty.txt", "r")
+ plik = open("kontakty.txt", "r")
 
-if plik.readable():
+ if plik.readable():
 
     print("Dane: ")
-    linia = plik.read()
+    linia = plik.read() 
     print(linia)
