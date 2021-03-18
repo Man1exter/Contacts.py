@@ -1,4 +1,5 @@
 
+print("<TWOJ OSOBISTY DZIENNIK KONTATKOW>")
 wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- " + "\n"))
 
 if wybor == 1:
@@ -29,6 +30,6 @@ else:
 
  if plik.readable():
 
-    print("Dane: ")
-    linia = plik.read() 
-    print(linia)
+    print("Dane Wszystkich Zapisanych: ")
+    liniaPliku = plik.read() 
+    print(liniaPliku)
