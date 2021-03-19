@@ -1,6 +1,6 @@
 
 print("<TWOJ OSOBISTY DZIENNIK KONTATKOW>")
-wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- " + "\n"))
+wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3]" + "\n"))
 
 if wybor == 1:
  plik = open("kontakty.txt", "a")
@@ -23,6 +23,22 @@ if wybor == 1:
     plik.write(input("( ENTER --> ZATWIERDZ )") + "\n")
 
     plik.close()
+
+elif wybor == 3:
+
+    print("CHOINKA NA ROZLUZNIONE DNI :>")
+
+    size = 7
+    m = ( 2 * size ) - 2
+
+    for ele in range(0,size):
+       for jele in range(0,m):
+           print(end = " ")
+           m = m - 1
+    for jele in range(0,ele + 1):
+      print("* ",end = " ")
+
+    print(" ")
 
 else:
 
