@@ -32,12 +32,11 @@ elif wybor == 3:
     m = ( 2 * size ) - 2
 
     for ele in range(0,size):
-       for jele in range(0,m):
-           print(end = " ")
-           m = m - 1
-    for jele in range(0,ele + 1):
-      print("* ",end = " ")
-
+       for ele2 in range(0,m):
+           print(end = "" + "\n")
+       m = m - 1
+       for ele2 in range(0,ele + 1):
+          print("* ",end = " ")
     print(" ")
 
 else:
