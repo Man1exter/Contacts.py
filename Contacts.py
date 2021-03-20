@@ -10,6 +10,8 @@ if wybor == 1:
     plik.write(input("Imie:  " + "\n"))
     plik.write(input("Nazwisko:  " + "\n"))
     plik.write(input("Narodowość:  " + "\n"))
+    plik.write(input("Wiek:  " + "\n"))
+    plik.write(input("Zawod wykonywany:  " + "\n"))
 
     telefon = input("Telefon: ") #zmienna...
 
