@@ -14,6 +14,7 @@ if wybor == 1:
     plik.write(input("Zawod wykonywany:  " + "\n"))
 
     telefon = input("Telefon: ") #zmienna...
+    wiek = input("Wiek: ") #zmienna...
 
     if telefon != int:
         print("Wprowadziles zle dane, popraw je")
@@ -21,6 +22,13 @@ if wybor == 1:
         plik.write(telefon)
     else:
         plik.write(telefon)
+
+    if wiek != int:
+        print("Wprowadziles zle dane, popraw je")
+        wiek = input("Telefon:  ")
+        plik.write(wiek)
+    else:
+        plik.write(wiek)
 
     plik.write(input("( ENTER --> ZATWIERDZ )") + "\n")
 
