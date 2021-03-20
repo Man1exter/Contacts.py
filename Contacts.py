@@ -1,5 +1,5 @@
 
-print("<TWOJ OSOBISTY DZIENNIK KONTATKOW>")
+print("\U0001F917" + "<TWOJ OSOBISTY DZIENNIK KONTATKOW>" + "\U0001F917")
 wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3]" + "\n"))
 
 if wybor == 1:
