@@ -60,6 +60,17 @@ elif wybor == 4:
     print("Podobna do listy, liczona od 0")
     print("Ile jest 10 w krotce?: ", krotka.count(10))
     print("Index elementu 20 to: ", krotka.index(20))
+    print("MODYFIKACJA NIEDOZWOLONA NP. KROTKA[0] = 1 WYWALI BLAD")
+
+    print("============================================")
+
+    print(">>>>>>>>>>>>WYCINKI Z KROTKI: <<<<<<<<<<<<<<<<<<<")
+
+    print("od 0 do 3 =>",krotka[0:3])
+    print("od 2 do 4 =>",krotka[2:4])
+    print("od 2 do 4 =>",krotka[1:5])
+    print("od poczatku do konca krotki =>",krotka[0:])
+    print("od poczatku do 4 =>",krotka[:4])
 
 else:
 
