@@ -1,6 +1,6 @@
 
 print("\U0001F917" + "<TWOJ OSOBISTY DZIENNIK KONTATKOW>" + "\U0001F917")
-wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3]" + "\n"))
+wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3] --- TUPLEINFO[4] ---" + "\n"))
 
 if wybor == 1:
  plik = open("kontakty.txt", "a")
@@ -48,6 +48,13 @@ elif wybor == 3:
        for ele2 in range(0,ele + 1):
           print("* ",end = " ")
     print(" ")
+
+elif wybor == 4:
+    
+    krotka = (5,10,15,20,25,30,35,40,45)
+
+    print(krotka[0])
+    print(krotka[6])
 
 else:
 
