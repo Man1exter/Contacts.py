@@ -1,6 +1,6 @@
 
 print("\U0001F917" + "<TWOJ OSOBISTY DZIENNIK KONTATKOW>" + "\U0001F917")
-wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3] --- TUPLEINFO[4] ---" + "\n"))
+wybor = int(input(" --- ZAPIS[1] --- CZY --- ODCZYT[2] --- CHOINKA[3] --- TUPLEINFO[4] --- AUTHOR[5]" + "\n"))
 
 if wybor == 1:
  plik = open("kontakty.txt", "a")
@@ -71,6 +71,12 @@ elif wybor == 4:
     print("od 2 do 4 =>",krotka[1:5])
     print("od poczatku do konca krotki =>",krotka[0:])
     print("od poczatku do 4 =>",krotka[:4])
+
+elif wybor == 5:
+
+    dane = ["Mariusz","Man1exter",20]
+    tekst = "Witam, jestem {0}, czyli {1} mam aktualnie {2} lat programuje bo to moja pasja \U0001F917!".format(dane[0],dane[1],dane[2])
+    print(tekst)
 
 else:
 
