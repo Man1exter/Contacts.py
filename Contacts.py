@@ -50,11 +50,16 @@ elif wybor == 3:
     print(" ")
 
 elif wybor == 4:
-    
+
     krotka = (5,10,15,20,25,30,35,40,45)
 
-    print(krotka[0])
-    print(krotka[6])
+    print("krotka 0 ===> ",krotka[0])
+    print("krotka 6 ===> ",krotka[6])
+    print("Cala krotka ===> ",krotka)
+
+    print("Podobna do listy, liczona od 0")
+    print("Ile jest 10 w krotce?: ", krotka.count(10))
+    print("Index elementu 20 to: ", krotka.index(20))
 
 else:
 
